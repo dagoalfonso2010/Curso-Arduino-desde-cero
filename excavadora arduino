@@ -1,0 +1,88 @@
+Servo servo1;
+Servo servo2;
+Servo servo3;
+Servo servo4;
+int tiempo = 1000;
+int tiempo1 =15;
+int tiempo2 = 1500;
+int i;
+
+void setup() {
+  servo2.attach(10);
+  servo1.attach(9);
+  servo3.attach(11);
+  servo4.attach(12);
+}
+
+void loop() {
+ 
+       //avanza servo2 
+      delay(tiempo);
+    for(i = 0;i<160;i++)
+  {
+  delay(tiempo1);
+  servo2.write(i);
+  
+      }
+      // SERVO TRES
+       delay(tiempo);
+    for(i = 0;i<130;i++)
+  {
+  delay(tiempo1);
+  servo3.  write(i);
+  
+      }
+      //
+           //SERVO 1 AVANZA
+       delay(tiempo);
+    for(i = 0;i<150;i++)
+  {
+  delay(tiempo1);
+  servo1.write(i);
+  
+      }
+      //
+       //giro servo4
+      delay(tiempo);
+    for(i = 10;i<130;i++)
+  {
+  delay(tiempo1);
+  servo4.write(i);
+  
+      }
+      //SERVO 2 REGRESA
+      delay(tiempo);
+    for(i = 150;i>0;i--)
+  {
+  delay(tiempo1);
+  servo2.write(i);
+
+  //
+        }
+      //REGRESA SERVO 3
+      delay(tiempo);
+    for(i = 150;i>0;i--)
+  {
+  delay(tiempo1);
+  servo3.write(i);
+        }
+        //
+        //
+        //giro servo4 regresa
+      delay(tiempo);
+    for(i = 130;i>10;i--)
+  {
+  delay(tiempo1);
+  servo4.write(i);
+  
+      }
+      //SERVO1REGRESA
+      delay(tiempo);
+    for(i = 150;i>0;i--)
+  {
+  delay(tiempo1);
+  servo1.write(i);
+  
+      }
+
+        }
