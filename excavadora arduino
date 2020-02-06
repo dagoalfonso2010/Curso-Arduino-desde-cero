@@ -1,3 +1,5 @@
+//aca inicia el programa
+//copie y pegue el programa en el editor arduino
 #include <Servo.h>
 Servo servo1;
 Servo servo2;
